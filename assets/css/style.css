@@ -432,7 +432,7 @@ body {
   background-color: var(--neutral-95);
 }
 
-.search-item:where(.label, .material-symbols-rounded) {
+.search-item :where(.label, .material-symbols-rounded) {
   position: absolute;
   pointer-events: none;
 }
