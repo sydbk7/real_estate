@@ -318,7 +318,7 @@ section {
   display: grid;
   place-items: center;
   padding-inline: 16px;
-  border-color: var(--secondary-100);
+  background-color: var(--secondary-100);
   border-radius: var(--radius-small);
   box-shadow: var(--shadow-3);
 }
@@ -388,6 +388,32 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.card-title:where(:hover, :focus-visible) {
+  color: var(--primary-100);
+}
+
+.card-text {
+  color: var(--neutral-40);
+}
+
+.card-meta-list {
+  padding-block-start: 16px;
+  margin-block-start: 16px;
+  border-block-start: 1px solid var(--neutral-90);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--neutral-20);
 }
 
 .header {
@@ -578,4 +604,19 @@ section {
   min-height: 100%;
   pointer-events: none;
   z-index: -2;
+}
+
+.property {
+  padding-block-start: 60px;
+}
+
+.property .section-text {
+  margin-block: 8px 16px;
+  color: var(--neutral-30);
+}
+
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
 }
