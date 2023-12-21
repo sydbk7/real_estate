@@ -694,11 +694,8 @@ section {
 
 .footer-bottom {
   border-block-start: 1px solid var(--neutral-20);
-}
-
-.footer-bottom .container {
-  padding-block: 20px;
-  display: grid;
+  padding-block: 10px;
+  display: flex;
   justify-content: center;
 }
 
@@ -828,6 +825,7 @@ section {
   .btn-link {
     color: var(--neutral-80);
     line-height: 48px;
+    border: none;
   }
 
   .navbar-link {
